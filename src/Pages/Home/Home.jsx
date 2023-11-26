@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react'
 import axios from "axios";
 import { Layout } from '../../Components/Layout/Layout'
 import { Card } from '../../Components/Card/Card'
+import { ProductDetail } from '../../Components/ProductDetail/ProductDetail';
 const options = {method: 'GET', url: 'https://api.escuelajs.co/api/v1/products'};
+
 
 export const Home = () => {
 
@@ -21,6 +23,7 @@ export const Home = () => {
       {
         products.map( product => <Card key={ product.id } product={ product } />)
       }
+      <ProductDetail />
     </Layout>
   )
 }

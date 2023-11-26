@@ -22,7 +22,7 @@ export const Card = ( { product } ) => {
       </figure>
       <p className='flex justify-between p-1 bg-gray-200'>
         <span className='text-pink-600 text-sm font-extrabold'>{ title }</span>
-        <span className='text-purple-800 text-sm font-extrabold'>{ price }</span>
+        <span className='text-purple-800 text-sm font-extrabold'>${ price }</span>
       </p>
     </div>
   )
